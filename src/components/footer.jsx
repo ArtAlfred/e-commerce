@@ -86,7 +86,9 @@ const Footer = () => {
                 Be the first to know when we stock new designs
               </p>
             </div>
-            <p className="text-light fs-5 roboto">&copy; 2023</p>
+            <p className="text-light fs-5 roboto">
+              &copy; 2023 created by Art Alfred Bernales
+            </p>
           </div>
 
           <div className="col mb-3"></div>
