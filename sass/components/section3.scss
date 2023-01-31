@@ -1,0 +1,24 @@
+.section--3 {
+  margin-top: 14rem;
+  height: auto;
+
+  &__items {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 4rem;
+
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+
+    @media (max-width: 767px) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section--3--button {
+    display: none !important;
+  }
+}

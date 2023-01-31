@@ -1,0 +1,86 @@
+.hero {
+  overflow: hidden;
+
+  .btn--hero {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    margin: 2rem 0;
+    border: 2px solid #fff;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+
+    &::before {
+      background: #fff;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      transition: all 0.6s ease;
+    }
+  }
+
+  .btn1 {
+    font-weight: 500;
+    letter-spacing: 2.8px;
+  }
+
+  .btn1::before {
+    width: 0%;
+    height: 100%;
+  }
+
+  .btn1:hover {
+    color: #000;
+  }
+
+  .btn1:hover::before {
+    width: 100%;
+  }
+
+  .hero--carousel {
+    right: 4rem !important;
+    margin-right: 0 !important;
+    left: auto;
+    bottom: 2rem !important;
+    margin-left: 0 !important;
+    display: block !important;
+
+    button {
+      width: 5px !important;
+      height: 5px !important;
+      background-color: transparent !important;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+.hero--img {
+  height: inherit;
+  filter: brightness(75%);
+}
+
+.hero--box--img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+  .hero--img--1 {
+    display: none !important;
+  }
+
+  .hero--img--2 {
+    display: block !important;
+  }
+}

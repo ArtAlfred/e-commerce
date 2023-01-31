@@ -1,0 +1,39 @@
+.page {
+  height: auto;
+  padding: 0rem 6rem;
+
+  .box {
+    &__item {
+      width: 100%;
+
+      img {
+        height: inherit;
+        width: inherit;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .page {
+    padding: 0rem 0rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .card--item--box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem 1rem;
+  }
+
+  .back--home {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .card--item--title {
+    padding: 0rem 1rem;
+  }
+}

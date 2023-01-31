@@ -1,0 +1,70 @@
+import React from "react";
+
+const CareBtn = (props) => {
+  return (
+    <div className="addToCart d-grid">
+      <div
+        className="d-flex justify-content-between"
+        style={{ marginTop: "2rem" }}
+      >
+        <h6 className="fs-4 fw-semibold">Size</h6>
+      </div>
+      <p className="fs-4 text-danger">{props.warningCare}</p>
+      <div
+        className="d-grid mt-3"
+        style={{
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "1.5rem 1rem",
+        }}
+      >
+        <button
+          type="button"
+          className="size-btn fs-4 border p-2 py-3 roboto"
+          onClick={() => props.selectSize("30 ML")}
+        >
+          30 ML
+        </button>
+        <button
+          type="button"
+          className="size-btn fs-4 border p-2 py-3 roboto"
+          onClick={() => props.selectSize("60 ML")}
+        >
+          60 ML
+        </button>
+        <button
+          type="button"
+          className="size-btn fs-4 border p-2 py-3 roboto"
+          onClick={() => props.selectSize("80 ML")}
+        >
+          80 ML
+        </button>
+      </div>
+
+      <button
+        className="addToCart__btn button fs-4 text-light rounded mt-5"
+        type="button"
+        style={{
+          background: "#000",
+          boxShadow: "none",
+          fontWeight: "500",
+        }}
+        onClick={props.addToCartCare}
+      >
+        Add to Bag
+      </button>
+      <button
+        className="addToCart__btn button fs-4 text-dark mt-3 border rounded size-btn"
+        type="button"
+        style={{
+          background: "#fff",
+          boxShadow: "none",
+          fontWeight: "500",
+        }}
+      >
+        Favorite
+      </button>
+    </div>
+  );
+};
+
+export default CareBtn;

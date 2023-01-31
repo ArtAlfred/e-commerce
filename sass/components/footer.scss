@@ -1,0 +1,68 @@
+.footer {
+  background-color: #000 !important;
+}
+
+.member {
+  width: 100%;
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  div {
+    height: 60rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(80%);
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 0rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer--instagram {
+    display: grid;
+
+    &__image {
+      height: 37rem !important;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .sign--up {
+    padding: 0rem 2rem !important;
+  }
+
+  footer {
+    padding: 0rem 6rem 0rem 6rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer--instagram {
+    &__image {
+      height: 32rem !important;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .footer--instagram {
+    &__image {
+      height: 26rem !important;
+    }
+  }
+}

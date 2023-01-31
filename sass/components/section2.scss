@@ -1,0 +1,42 @@
+.section--2 {
+  height: auto;
+  overflow: hidden;
+  margin-top: 8rem;
+
+  .section__2 {
+    grid-template-columns: repeat(4, 1fr);
+
+    &__box {
+      height: 52rem;
+      width: 28rem;
+      padding: 0rem 0rem;
+
+      &__img {
+        height: 40rem;
+        overflow: hidden;
+
+        img {
+          height: inherit;
+        }
+      }
+    }
+  }
+
+  .section2--img {
+    height: 6rem;
+  }
+
+  @media (max-width: 767px) {
+    &__secure {
+      display: grid;
+
+      &__box {
+        height: 14rem !important;
+      }
+    }
+
+    &__desc {
+      margin-top: 6rem;
+    }
+  }
+}

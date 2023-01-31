@@ -1,0 +1,44 @@
+.searchBar {
+  background-color: #fff;
+
+  ion-icon {
+    font-size: 2.8rem;
+  }
+
+  animation: searchBar 0.5s forwards;
+}
+
+@keyframes searchBar {
+  from {
+    top: 13rem;
+  }
+  to {
+    top: 15rem;
+  }
+}
+
+@media (max-width: 991px) {
+  @keyframes searchBar {
+    from {
+      top: 6rem;
+    }
+    to {
+      top: 10rem;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .searchBar {
+    padding: 0rem 1rem !important;
+  }
+
+  .search-items-container {
+    height: 32rem !important;
+  }
+
+  .search-item {
+    height: 18rem !important;
+    width: 15rem !important;
+  }
+}

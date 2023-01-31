@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @media (max-width: 1199px) {
+    font-size: 56%;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.text {
+  color: #000;
+  text-decoration: none !important;
+}
+
+ion-icon {
+  font-size: 2.2rem;
+}
+
+p {
+  margin-bottom: 0rem !important;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.border-none {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.img {
+  height: 42rem;
+  width: 100%;
+}
+
+.general--button {
+  background-color: #000;
+  color: #fff;
+  padding: 1.8rem;
+  font-size: 1.6rem;
+}
+
+.section--button {
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #000 !important;
+
+    ion-icon {
+      color: #fff !important;
+    }
+  }
+}
+
+.image-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.button {
+  padding: 1.4rem 2.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}

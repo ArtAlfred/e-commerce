@@ -1,0 +1,38 @@
+.remove {
+  margin-left: -0.3rem;
+
+  ion-icon {
+    font-size: 1.6rem;
+    margin-top: 0.7rem;
+  }
+}
+
+.close__cart {
+  ion-icon {
+    font-size: 2.6rem;
+  }
+}
+
+.items::-webkit-scrollbar {
+  display: none !important;
+}
+
+@media (max-width: 450px) {
+  .cart-offCanvas {
+    width: 100% !important;
+  }
+
+  .price--mobile {
+    display: block !important;
+  }
+
+  .price {
+    display: none;
+  }
+
+  .remove--mobile {
+    position: absolute;
+    top: 8rem;
+    left: 23rem;
+  }
+}
